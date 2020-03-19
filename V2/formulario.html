@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    <title></title>
+    </head>
+
+    <body>
+        <!--agreagar un div al inicio o al final, para colocar los link a las hojas de vida-->
+        <form >
+            <fieldset>
+                <legend>informacion personal</legend>
+                <label>nombre:</label>
+                <input type="text" id="nombre">
+                <label>cedula:</label>
+                <input type="number" id="cedula">
+                <label>correo:</label>
+                <input type="email" id="correo">
+                <label>direccion:</label>
+                <input type="text" id="direccion">
+                <label>barrio:</label>
+                <input type="text" id="barrio">
+                <label>localidad:</label>
+                <input type="text" id="localidad">
+                <label>ciudad:</label>
+                <input type="text" id="ciudad">
+                <label>telefono:</label>
+                <input type="tel" id="telefono">
+                <label>celular:</label>
+                <input type="tel" id="celular">
+                <label>perfil profecional:</label>
+                <textarea id="perfil"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>nivel educativo</legend>
+                <p>mayor nivel educativo</p>
+                <select id="nivel">
+                    <option value="Primaria" selected>Primaria</option>
+                    <option value="Bachillerato">Bachillerato </option>
+                    <option value="Tecnico">Tecnico</option>
+                    <option value="Tecnologo">Tecnologo</option>
+                    <option value="Universitaria Incompleta">Universitaria Incompleta</option>
+                    <option value="Universitaria Completa">Universitaria Completa</option>
+                    <option value="Posgrado">Posgrado</option>
+                </select>
+                <label>Tiulo</label>
+                <input type="text" id="titulo">
+                <label>Institucion</label>
+                <input type="text" id="institucion">
+                <label>fecha finalizacion</label>
+                <input type="date" id="fechafin">
+            </fieldset>
+            <fieldset>
+                <legend>Experiencia Laboral</legend>
+                <p>indique la informacion de su ultimo trabajo</p>
+                <label>Nombre de la Empresa</label>
+                <input type="text" id="empresa">
+                <label>Cargo</label>
+                <input type="text" id="cargo">
+                <label>Fecha de inico</label>
+                <input type="date" id="inicio">
+                <label>Fecha de Fin</label>
+                <input type="date" id="fin">
+                <label>Nombre de jefe</label>
+                <input type="text" id="jefe">
+                <label>telefono</label>
+                <input type="number" id="telefonoE">
+            </fieldset>
+            <fieldset>
+                <legend>Referencia Personal</legend>
+                <p>Ingrese una referencia personal</p>
+                <label>Nombre</label>
+                <input type="text" id="nombreR">
+                <label>telefono</label>
+                <input type="number" id="telefonoR"> 
+            </fieldset>
+            <input type="button" value="guardar" onclick=guardar()>
+        </form>
+        <div id="hojas">
+        </div>
+    </body>
+    <script>links();</script>
+</html>
