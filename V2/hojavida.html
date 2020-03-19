@@ -3,6 +3,11 @@
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script
             src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -10,12 +15,15 @@
     <script src="script.js"></script>
     <title></title>
 </head>
-<body>
+<body class="grey lighten-1">
+	<div class="container">
+	<div class="card-panel teal lighten-2 z-depth-4 center-align">
     <h1>HOJA DE VIDA</h1>
-    <h4 id="Hnombre"></h4>
-    <h5>Información personal</h5>
+    <h4 id="Hnombre"></h4></div>
+    <h5>Información personal <i class="small material-icons ">person</i></h5>
+	<div class="row">
     <p>
-        <ul>
+        <ul class="col s1">
             <li id="Hcedula">Cedula: </li>
             <li id="Hcorreo">Correo: </li>
             <li id="Hdireccion">Direccion: </li>
@@ -26,31 +34,43 @@
             <li id="Hcelular">celular: </li>
         </ul>
     </p>
-    <h5>Perfil laboral</h5>
-    <p id="Hperfil">
-        
-    </p>
-    <h5>Nivel educativo</h5>
-    <ul>
+	</div>
+    <h5>Perfil laboral <i class="small material-icons floating ">business_center</i></h5>
+	<div class="row">
+	<ul class="col s1">
+		<p id="Hperfil">
+			
+		</p>
+	</ul>
+	</div>
+    <h5>Nivel educativo <i class="small material-icons floating ">school</i></h5>
+	<div class="row">
+    <ul class="col s1">
         <li id=Hnivel>Nivel educativo: </li>
         <li id="Hinstitucion">Institucion: </li>
         <li id="Htitulo">Titulo: </li>
         <li id="Hfechafin">Fecha de finalizacion: </li>
     </ul>
-    <h5>Experiencia laboral</h5>
-        <ul>
+	</div>
+    <h5>Experiencia laboral <i class="small material-icons floating ">work</i></h5>
+	<div class="row">
+        <ul class="col s1">
             <li id="Hempresa">Empresa: </li>
             <li id="Hcargo">Cargo: </li>
             <li id="Hperiodo">Periodo: </li>
             <li id="Hjefe">Jefe: </li>
             <li id="HtelefonoE">Telefono: </li>
         </ul>
-    
-    <h5>Referencias personales</h5>
-    <ul>
+    </div>
+    <h5>Referencias personales <i class="small material-icons floating ">record_voice_over</i></h5>
+	<div class="row">
+    <ul class="col s1">
         <li id="HnombreR">Nombre: </li>
         <li id="HtelefonoR">Telefono: </li>
     </ul>
+	</div>
     <script>mostrar();</script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	</div>
 </body>
 </html>
