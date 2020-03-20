@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
+    <title></title>
+    </head>
+
+    <body>
+        <!--agreagar un div al inicio o al final, para colocar los link a las hojas de vida-->
+    
+        <h1>FORMULARIO HOJA DE VIDA</h1> 
+        <form >
+            <fieldset>
+                <legend> <h2>Información personal</h2></legend>
+                <label>Nombre:</label>
+                <input type="text" id="nombre">
+                <label>Cedula:</label>
+                <input type="number" id="cedula">
+                <label>Correo:</label>
+                <input type="email" id="correo">
+                <label>Direccion:</label>
+                <input type="text" id="direccion">
+                <label>Barrio:</label>
+                <input type="text" id="barrio">
+                <label>Localidad:</label>
+                <input type="text" id="localidad">
+                <label>Ciudad:</label>
+                <input type="text" id="ciudad">
+                <label>Telefono:</label>
+                <input type="tel" id="telefono">
+                <label>Celular:</label>
+                <input type="tel" id="celular">
+            </fieldset>
+            <fieldset>
+                <legend> <h2>Perfil profesional</h2></legend>
+                <textarea id="perfil"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Nivel educativo</h2></legend>
+                <label>Ultimo nivel educativo cursado</label>
+                <select id="nivel">
+                    <option value="Primaria" selected>Primaria</option>
+                    <option value="Bachillerato">Bachillerato </option>
+                    <option value="Tecnico">Tecnico</option>
+                    <option value="Tecnologo">Tecnologo</option>
+                    <option value="Universitaria Incompleta">Universitaria Incompleta</option>
+                    <option value="Universitaria Completa">Universitaria Completa</option>
+                    <option value="Posgrado">Posgrado</option>
+                </select>
+                <label>Tiulo: </label>
+                <input type="text" id="titulo">
+                <label>Institucion: </label>
+                <input type="text" id="institucion">
+                <label>Fecha de finalización:</label>
+                <input type="date" id="fechafin">
+            </fieldset>
+            <fieldset>
+                <legend><h2>Experiencia Laboral</h2></legend>
+                <p>Indique la informacion de su ultimo trabajo</p>
+                <label>Empresa: </label>
+                <input type="text" id="empresa">
+                <label>Cargo: </label>
+                <input type="text" id="cargo">
+                <label>Fecha inico: </label>
+                <input type="date" id="inicio">
+                <label>Fin: </label>
+                <input type="date" id="fin">
+                <label>Jefe: </label>
+                <input type="text" id="jefe">
+                <label>Telefono: </label>
+                <input type="number" id="telefonoE">
+            </fieldset>
+            <fieldset class="ultima">
+                <legend><h2>Referencia personal</h2></legend>
+                <p>Ingrese una referencia personal</p>
+                <label>Nombre: </label>
+                <input type="text" id="nombreR">
+                <label>Telefono:</label>
+                <input type="number" id="telefonoR"> 
+            </fieldset>
+            <div>
+                <input class="btn" type="button" value="Guardar" onclick=guardar()>
+            </div>
+        </form>
+        <div id="hojas" class="btn">
+        </div>
+    </body>
+    <script>links();</script>
+</html>

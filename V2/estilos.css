@@ -1,0 +1,91 @@
+
+body{
+    background: lightgray;
+
+}
+
+fieldset
+{
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-right: 350px;
+    line-height: 25px;
+    background: lightblue;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    background: lightblue;
+    height: 60px;
+    margin-left:200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
+h2{
+    margin-top: 0px;
+    color: black;
+    font-family: 'Bellota Text', cursive;
+}
+label{
+    font-size: 20px;
+    font-family: 'Bellota Text', cursive;
+    text-align: justify;
+}
+input{
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Bellota Text', cursive;
+    text-align: justify;
+    background: lightgray;
+    border: 2px solid gray;
+}
+textarea{
+    width: 600px ;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Bellota Text', cursive;
+    text-align: justify;
+    border-radius: 5px;
+    background: lightgray;
+    border: 2px solid gray;
+}
+p{
+    font-size: 20px;
+    font-family: 'Bellota Text', cursive;
+    text-align: justify;
+}
+option, select{
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Bellota Text', cursive;
+    text-align: justify;
+    border-radius: 5px;
+    background: lightgray;
+    border: 2px solid gray;
+}
+button{
+    margin: 30px;
+}
+div {
+    margin-left: 620px;
+    margin-right: 650px;
+    margin-top: 30px;
+}
+
+.bt{
+    font-size: 15px;
+    font-family: 'Bellota Text', cursive;
+    text-align: justify;
+    border-radius: 5px;
+    background: lightgray;
+    border: 2px solid gray;
+}
